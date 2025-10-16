@@ -1,0 +1,118 @@
+
+
+.card-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+}
+
+.card-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(255, 64, 129, 0.25);
+}
+
+/* ===== Image ===== */
+#item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Text Info ===== */
+#item-info {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+#item-title {
+  color: #ad1457;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#item-capacity {
+  color: #6d4c41;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+/* ===== Price + Quantity Section ===== */
+#amount-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem 1rem;
+  background: linear-gradient(135deg, #f8bbd0, #fce4ec);
+  border-top: 1px solid #f48fb1;
+  border-radius: 0 0 18px 18px;
+}
+
+#item-price {
+  font-size: 1.1rem;
+  color: #b23a48;
+  font-weight: 700;
+}
+
+/* ===== Quantity Controls ===== */
+#qty-changer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#decrement-btn,
+#increment-btn {
+  background: linear-gradient(135deg, #f48fb1, #ec407a);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#decrement-btn:hover,
+#increment-btn:hover {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  transform: translateY(-2px);
+}
+
+#item-qty {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #f48fb1;
+  border-radius: 6px;
+  padding: 0.2rem;
+  font-size: 1rem;
+  color: #b23a48;
+}
+
+@media (max-width: 768px) {
+  #item-image {
+    height: 160px;
+  }
+
+  #item-title {
+    font-size: 1.1rem;
+  }
+
+  #item-price {
+    font-size: 1rem;
+  }
+
+  #decrement-btn,
+  #increment-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}

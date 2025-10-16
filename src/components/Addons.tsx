@@ -20,40 +20,35 @@ function AddonsComp() {
           image={Projectors} 
           title="Projectors" 
           price={200} 
-          withCapacity={false}
-         /> 
-
+          withCapacity={false} 
+        /> 
         <ItemCard 
           image={Speaker} 
           title="Speakers" 
           price={35} 
           withCapacity={false} 
         /> 
-
         <ItemCard 
           image={Microphones} 
           title="Microphones" 
           price={45} 
           withCapacity={false} 
         /> 
-
         <ItemCard 
           image={Whiteboard} 
           title="Whiteboards" 
           price={80} 
           withCapacity={false} 
         /> 
-
         <ItemCard 
           image={Signage} 
           title="Signages" 
           price={80} 
           withCapacity={false} 
         /> 
-
       </div> 
     </div> 
   ); 
 } 
  
-export default AddonsComp; 
+export default AddonsComp;
